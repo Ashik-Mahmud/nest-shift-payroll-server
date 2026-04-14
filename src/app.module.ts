@@ -24,7 +24,6 @@ export class AppModule {
 
   // console log to check if the module is loaded
   constructor() {
-    console.log('AppModule loaded');
     this.fetchShiftData();
   }
 
@@ -42,7 +41,7 @@ export class AppModule {
       console.log('Total shift time (hours):', this.calculateTotalShiftTime());
 
       // call this function to calculate the overtime hours with hourly rate which is 1.5 of the regular rate if the shift duration is more than 8 hours and log the result
-      console.log('Overtime hours and rates:', this.calculateOverTimeHours());
+      // console.log('Overtime hours and rates:', this.calculateOverTimeHours());
     } catch (error) {
       console.error('Error fetching shift data:', error);
       return;
